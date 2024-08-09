@@ -1,0 +1,421 @@
+/* Main Box */
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.about{
+    height: 120vh;
+    width: 100%;
+    /* display: flex; */
+    text-align: center;
+    align-items: center;
+    /* padding: 2rem; */
+    padding-top: 3rem;
+    /* background-color: #570957; */
+
+}
+/* Inside main box Cosider about box */
+.about_box{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    padding: 0.5rem;
+}
+.experience_project_paragraph_talk_box{
+    height: 100%;
+    width: 50%;
+    color: white;
+}
+.experience_project_box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    height: 40%;
+    margin-top: 2.5rem;
+
+}
+.experience_box{
+    height: 85%;
+    width: 37%;
+    background:#00baf2;
+    color: white;
+    border-radius: 2rem;
+    padding: 2.5rem;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid #000; */
+    color: #000;
+}
+.experience_box>div{
+    font-weight: 600;
+}
+.experience_box>div>h1{
+    font-size: 2.5rem;
+}
+.project_box{
+    height: 85%;
+    width: 37%;
+    background: #00baf2;
+    color: white;
+    border-radius: 2rem;
+    padding: 2.5rem;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid #000; */
+    color: #000;
+}
+.project_box>div{
+    font-weight: 600;
+}
+.project_box>div>h1{
+    font-size: 2.5rem;
+}
+.paragraph_box{
+    height: 30%;
+    width: 100%;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.paragraph_content_box{
+    height: 90%;
+    width: 90%;
+    color: white;
+    border: 2px solid #00baf2;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 2rem;
+}
+.paragraph_content_box>p{
+ font-size: 1rem;
+}
+
+.talk_box{
+    height: 15%;
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#btn{
+    height: 2.7rem;
+    width: 5rem;
+    margin-left: 2rem;
+    border-radius: 0.8rem;
+    border: 1px solid navy;
+    background-color: #570957;
+    color: white;
+    box-shadow: 0 0 10px white; 
+}
+#btn>a{
+    color: white;
+    font-size: 1rem;
+}
+#btn>a:hover{
+    color:red;
+}
+
+.about_image_box{
+    height: 100%;
+    width: 50%;
+    /* background:  #000; */
+    color: white;
+    border-radius: 15.5rem 15.5rem 0 0;
+    box-shadow: 0  0 10px white;
+    /* padding-top: 7rem; */
+    
+}
+
+/* CSS for Popup these through we can Show Popup box after on click Button  */
+.popup {
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 30px;
+    left: 60px;
+    width: 50%;
+    height: 60%;
+    /* background: rgba(0, 0, 0, 0.5);  */
+    /* background: #000; */
+    z-index: 1000; 
+  }
+  
+  .popup_content {
+    /* background: rgba(0, 0, 0, 0.5);  */
+    width: 100%; 
+    height: 100%;
+    color: white;
+    border-radius: 2rem;
+    text-align: center;
+    line-height: 1.4rem;
+    background-color: #000;
+  }
+  .popup_content>h3{
+    color: #00baf2;
+  }
+  .close {
+    cursor: pointer;
+    font-size: 2rem;
+    color: #000;
+    background-color: red;
+  }
+  #img_app{
+    border-radius: 15.5rem 15.5rem 0 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+
+  }
+/*For  Medium device */
+  @media (max-width:1024px){
+    .about{
+        height: 110vh;
+        width: 100%;
+        /* padding: 0%; */
+        /* background: #000; */
+        margin-top: 0.8rem;
+    }
+    .about_box{
+        height: 90%;
+        /* background: #00baf2; */
+        color: #fff;
+        padding: 0%;
+        margin-top: 0.7rem;
+    }
+    .experience_project_paragraph_talk_box{
+        height: 100%;
+        width: 50%;
+        /* background: red; */
+        padding: 0%;
+        margin: 0%;
+        display: flex;
+        justify-content: start;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .experience_project_box{
+        height: 70vh;
+        width: 100%;
+        /* background: #000; */
+        margin: 0%;
+        padding: 0%;
+        display: flex;
+        justify-content: start;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 2rem;
+    }
+    .experience_box{
+        height: 27vh;
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .project_box{
+        height: 27vh;
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .about_image_box{
+        background: brown;
+        width: 50%;
+    }
+    
+    .paragraph_box{
+        width: 100%;
+        height: 50vh;
+        box-sizing: border-box;
+        margin-top: 0%;
+        padding-top: 0%;
+    }
+    
+    .paragraph_content_box>p{
+        height: 90%;
+        width: 100%;
+    }
+    .talk_box{
+        margin: 0%;
+    }
+
+  }
+
+  @media (max-width:600px){
+    .about{
+        /* padding-top: 0.5rem; */
+        height: 138vh;
+        width: 100%;
+        border-radius: 0.5rem;
+        margin-top: 0.5rem;
+        background: #fff;
+        color: #000;
+    }
+    .about_image_box{
+        display:none;
+    }
+    .about_box{
+        width: 100%;
+        height: 94%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 0.5rem;
+        padding: 0%;
+        margin: 0%;
+        /* background: #570957; */
+    }
+    .experience_project_paragraph_talk_box{
+        width: 100%;
+        height: 95%;
+        /* background: #00baf2; */
+        padding: 0%;
+        margin: 0%;
+    }
+    .experience_project_box{
+        display:flex;
+        justify-content: start;
+        flex-direction: column;
+        width: 100%;
+        height: 85vh;
+        /* background: #570957; */
+        margin:0%;
+        padding: 0%;
+        
+    }
+    .experience_box{
+        width: 90%;
+        height: 40vh;
+        /* background-color: bisque; */
+        /* line-height: 0.5rem; */
+        margin: 0%;
+        padding: 0%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        gap: 0%;
+        line-height: 2.5rem;
+    }
+    .project_box{
+        width: 90%;
+        height: 40vh;
+        /* background-color: red; */
+        /* line-height: 0.5rem; */
+        margin: 0%;
+        padding: 0%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        gap: 0%;
+        /* line-height: 2.5rem; */
+
+    }
+    .project_box>div>h1{
+        font-size: 2.5rem;
+    }
+    .paragraph_box{
+        width: 100%;
+        height: 20vh;
+        color: #000;
+        box-sizing: border-box;
+        /* background: red; */
+        /* margin-top: 1rem; */
+    }
+    .paragraph_content_box{
+        height: 100%;
+        width: 100%;
+        color: #000;
+        /* background: #000; */
+        margin: 0%;
+        padding: 0%;
+    }
+    .paragraph_content_box>p{
+        height: 90%;
+        width: 90%;
+        /* background: #00baf2; */
+    }
+    .talk_box{
+        /* margin-top: 0.5rem; */
+        height: 10vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* background: #00baf2; */
+        padding: 0%;
+        margin-top: 1rem;
+        
+        
+    }
+    #btn{
+        margin: 0%;
+        padding: 0%;
+    }
+    .popup {
+        border-radius: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        position: fixed;
+        top: 5px;
+
+        /* width: 100%; */
+        /* height: 100%; */
+        background: rgba(0, 0, 0, 0.5); 
+        /* z-index: 100;  */
+        height: 97%;
+        width: 100%;
+        margin: 0%;
+        padding: 0%;
+        /* background: #000; */
+        /* background: red; */
+        box-sizing: border-box;
+        color: #fff;
+        display: block;
+        transform: translateX(-4rem);
+        /* transform: translateY(-5rem); */
+        /* margin-right: 2rem; */
+        /* transform: translate3d(1) */
+        /* margin-bottom: 1rem; */
+        
+      }
+      .popup_content>h3{
+        font-size: 1.2rem;
+        font-family: 500;
+        color: #00baf2;
+      }
+      .popup_content {
+        background: rgba(0, 0, 0, 0.5); 
+        width: 96%; 
+        height: 100%;
+        color: white;
+        border-radius: 2rem;
+        text-align: center;
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+        transform: translateX(0.6rem);
+      }
+      .close {
+        cursor: pointer;
+        font-size: 1.5rem;
+        color: #000;
+        /* background-color: #570957; */
+      }
+      
+  }

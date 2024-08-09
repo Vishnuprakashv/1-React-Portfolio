@@ -1,0 +1,45 @@
+<BrowserRouter>
+    <Routes>
+      <Route element={<Header/>} path="/home"><IoHome/></Route>
+      <Route element={<About/>} path="/about"><FaUserCircle /></Route>
+      <Route element={<Experience/>}  path="/experience" ><GrUserExpert /></Route>
+      <Route element={<Services/>}  path="/services"><RiServiceLine /></Route>
+      <Route element={<Contact/>} path="/contact"><AiTwotoneContacts /></Route>
+    </Routes>
+</BrowserRouter>
+<BrowserRouter>
+    <Nav />
+    <Routes>
+      <Route path="/" element={<Header />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/experience" element={<Experience />} />
+      <Route path="/services" element={<Services />} />
+    </Routes>
+</BrowserRouter>
+<!-- <section className={style.nav}>
+    <a href="#home" onClick={()=> setActiveNav('#')} className={activeNav === '#' ? 'active': ''}><IoHome/></a>
+    <a href="#about" onClick={()=> setActiveNav('#about')} className={activeNav === '#about' ? 'active': ''}><FaUserCircle /></a>
+    <a href="#experience" onClick={()=> setActiveNav('#experience')} className={activeNav === '#experience' ? 'active': ''}><GrUserExpert /></a>
+    <a href="#service" onClick={()=> setActiveNav('#services')} className={activeNav === '#services' ? 'active': ''}><RiServiceLine /></a>
+    <a href="#contact" onClick={()=> setActiveNav('#contact')} className={activeNav === '#contact' ? 'active': ''}><AiTwotoneContacts /></a>
+  </section> -->
+
+  <!-- <BrowserRouter>
+            
+    <Nav />
+    <Routes>
+      <Route path="/" element={<Header />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/experience" element={<Experience />} />
+      <Route path="/services" element={<Services />} />
+      <Route path="/contact" element={<Contact />} />
+    </Routes>
+</BrowserRouter> -->
+
+<!-- <div className={style.nav}>
+    <Link to="/"><IoHome/></Link>
+    <Link to="/about"><FaUserCircle /></Link>
+    <Link to="/experience"><GrUserExpert /></Link>
+    <Link to="/services"><RiServiceLine /></Link>
+    <Link to="/contact"><AiTwotoneContacts /></Link>
+  </div> -->
