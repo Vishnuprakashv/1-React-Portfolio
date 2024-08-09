@@ -50,7 +50,7 @@ const Contact = () => {
           <label htmlFor={style.message}>Message:</label>
           <textarea name="message" id={style.message} placeholder='Your Message' required />
           <button type="submit" id={style.btn_msg}  >
-           
+           Submit
           </button>
 
         </form>
