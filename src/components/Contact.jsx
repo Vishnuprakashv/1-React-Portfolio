@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react';
 import style from "./contact.module.css";
 import { MdEmail } from "react-icons/md";
-import { FaInstagramSquare } from "react-icons/fa"; // Updated import
+import { FaInstagramSquare } from "react-icons/fa"; 
 import { FaWhatsappSquare } from "react-icons/fa";
 
 const Contact = () => {
@@ -9,7 +9,7 @@ const Contact = () => {
   const [message, setMessage] = useState('');
   const [showModal, setShowModal] = useState(false);
   
-  // Removed sendEmail function
+  
 
   const closeModal = () => {
     setShowModal(false);

@@ -222,21 +222,21 @@
 
     }
     .chat_box_01{
-        height: 28vh;
+        height: 35vh;
         width: 80%;
         box-sizing: border-box;
         box-sizing: border-box;
 
     }
     .chat_box_02{
-        height: 28vh;
+        height: 35vh;
         width: 80%;
         box-sizing: border-box;
         box-sizing: border-box;
 
     }
     .chat_box_03{
-        height: 28vh;
+        height: 35vh;
         width: 80%;
         box-sizing: border-box;
         box-sizing: border-box;
@@ -253,7 +253,7 @@
 /* Media Query For Small Device */
 @media (max-width:600px){
     .contact{
-        height: 230vh;
+        height: 205vh;
         width: 100%;
         margin-top: 1rem;
     }
@@ -272,7 +272,7 @@
     }
     .contact_chat_box{
         margin-top: 2.5rem;
-        height: 120vh;
+        height: 103vh;
         width: 85vw;
         display: flex;
         align-items: center;
@@ -282,19 +282,19 @@
 
     }
     .chat_box_01{
-        height: 38vh;
+        height: 30vh;
         width: 100%;
         box-sizing: border-box;
 
     }
     .chat_box_02{
-        height: 38vh;
+        height: 30vh;
         width: 100%;
         box-sizing: border-box;
 
     }
     .chat_box_03{
-        height: 38vh;
+        height: 30vh;
         width: 100%;
         box-sizing: border-box;
 
@@ -306,4 +306,8 @@
     
     }
 
+}
+@media(max-width: 480px) {
+    
+    
 }

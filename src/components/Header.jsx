@@ -1,14 +1,14 @@
 import React, { useEffect } from 'react';
-import Typed from 'typed.js';  // Import the Typed library
+import Typed from 'typed.js';  
 import style from "./header.module.css";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import CV from "./My_Document/pdf/Resume_A.pdf";
 import ME from "./My_Document/image/IMG_20230502_090629_922-removebg-preview.png";
-// import { useState } from 'react';
+
 
 const Header = () => {
-  // const [activeNav,setActiveNav] = useState("#")
+  
   useEffect(() => {
     const typed = new Typed('#Single-text', {
       strings: ['VISHNU PRAKASH'],
@@ -25,12 +25,12 @@ const Header = () => {
         loop: true,
       });
 
-    // Cleanup the Typed instance on component unmount
+    
     return () => {
       typed.destroy();
       typed1.destroy();
     };
-  }, []); // Run this effect only once on component mount
+  }, []); 
 
   return (
     <section className={style.header} id="home">
