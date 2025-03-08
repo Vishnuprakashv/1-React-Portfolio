@@ -3,11 +3,8 @@ import Typed from 'typed.js';
 import style from "./header.module.css";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
-<<<<<<< HEAD
 import CV from "src/components/My_Document/pdf/Vishnu Prakash(Resume).pdf";
-=======
 import CV from "./My_Document/pdf/Vishnu_Prakash.pdf";
->>>>>>> 898e8f6 (Changes in about section)
 import ME from "./My_Document/image/IMG_20230502_090629_922-removebg-preview.png";
 
 
