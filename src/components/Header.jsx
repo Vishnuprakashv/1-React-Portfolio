@@ -3,7 +3,7 @@ import Typed from 'typed.js';
 import style from "./header.module.css";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
-import CV from "./My_Document/pdf/Resume_A.pdf";
+import CV from "src/components/My_Document/pdf/Vishnu Prakash(Resume).pdf";
 import ME from "./My_Document/image/IMG_20230502_090629_922-removebg-preview.png";
 
 
