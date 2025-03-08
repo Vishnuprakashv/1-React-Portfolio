@@ -1,14 +1,18 @@
 import React, { useEffect } from 'react';
-import Typed from 'typed.js';  
+import Typed from 'typed.js';
 import style from "./header.module.css";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
+<<<<<<< HEAD
 import CV from "src/components/My_Document/pdf/Vishnu Prakash(Resume).pdf";
+=======
+import CV from "./My_Document/pdf/Vishnu_Prakash.pdf";
+>>>>>>> 898e8f6 (Changes in about section)
 import ME from "./My_Document/image/IMG_20230502_090629_922-removebg-preview.png";
 
 
 const Header = () => {
-  
+
   useEffect(() => {
     const typed = new Typed('#Single-text', {
       strings: ['VISHNU PRAKASH'],
@@ -18,19 +22,19 @@ const Header = () => {
       loop: true,
     });
     const typed1 = new Typed('#Multiple-text', {
-        strings: ['Python Full Stack Developer','Data Analyst','Data Science'],
-        typeSpeed: 100,
-        backSpeed: 100,
-        backDelay: 3000,
-        loop: true,
-      });
+      strings: ['Python Full Stack Developer', 'Data Analyst', 'Data Science'],
+      typeSpeed: 100,
+      backSpeed: 100,
+      backDelay: 3000,
+      loop: true,
+    });
 
-    
+
     return () => {
       typed.destroy();
       typed1.destroy();
     };
-  }, []); 
+  }, []);
 
   return (
     <section className={style.header} id="home">
@@ -42,7 +46,7 @@ const Header = () => {
           <div className={style.btn_box_01}><a id={style.btn_01} href={CV} download>Download CV</a></div>
           <div className={style.btn_box_02}><a id={style.btn_02} href="https://api.whatsapp.com/send?phone=7050354791">Let's talk</a></div>
         </div>
-        
+
         <div className={style.anchor_image_scroll_box}>
           <div className={style.anchor_box}>
             <a id={style.linkdin} href="https://www.linkedin.com/in/vishnu-prakash-33b080234" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
@@ -52,7 +56,7 @@ const Header = () => {
             <img id={style.img} src={ME} alt="me" />
           </div>
           <div className={style.scroll_box}>
-            <a href="#contact"  className={style.scroll}>scroll down</a>
+            <a href="#contact" className={style.scroll}>scroll down</a>
           </div>
         </div>
       </div>

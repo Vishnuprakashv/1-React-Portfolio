@@ -3,7 +3,7 @@ import style from "./about.module.css";
 import { useState } from 'react';
 import { FaAward } from "react-icons/fa6";
 import { MdCreateNewFolder } from "react-icons/md";
-import APP_IMG from "./My_Document/image/Puran_img_icon.jpg"
+
 
 const About = () => {
   const [popupVisible, setPopupVisible] = useState(false);
@@ -18,19 +18,17 @@ const About = () => {
 
   return (
     <div>
-{/* About Content Box */}
+      {/* About Content Box */}
       <section className={style.about} id="about" >
-        <div>
+        <div className={style.get_to_know_about}>
           <h4 >Get To Know</h4>
           <h1>About me</h1>
         </div>
-        
+
         <div className={style.about_box}>
-          <div className={style.about_image_box}>
-            <img src={APP_IMG} id={style.img_app} alt="" />
-          </div>
-        <div className={style.experience_project_paragraph_talk_box}>
-            
+
+          <div className={style.experience_project_paragraph_talk_box}>
+
             <div className={style.experience_project_box}>
               <div className={style.experience_box}>
                 <div><h1><FaAward /></h1></div>
@@ -45,20 +43,22 @@ const About = () => {
             </div>
             <div className={style.paragraph_box}>
               <div className={style.paragraph_content_box}>
-              <p>
-              I'm a recent graduate with 8 months of Python development
-              experience, excelling in Django, Flask, ReactJS, and data analysis. 
-              I am detail-oriented and eager to contribute innovative ideas to the team.</p>
+                <p>
+                  As an experienced developer at Dualhash IT Solution Pvt. Ltd,
+                  I remotely developed and maintained WordPress websites, enhancing responsiveness.
+                  Collaborating with a mentor, I resolved design challenges to improve user experience.
+                  Additionally, I optimized site performance, ensuring security, efficiency, and seamless functionality.
+                </p>
               </div>
             </div>
             <div className={style.talk_box}>
               <button onClick={showPopup} id={style.btn}>Read more</button>
             </div>
           </div>
-          
+
         </div>
       </section>
-{/* ... Popup Content Box ... */}
+      {/* ... Popup Content Box ... */}
       {popupVisible && (
         <div className={style.popup}>
           <div className={style.popup_content}>
